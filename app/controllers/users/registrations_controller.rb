@@ -12,17 +12,16 @@ class Users::RegistrationsController < Devise::RegistrationsController
   #   super
   # end
 
-  GET /resource/edit
-  def edit
-  binding.pry
+  # GET /resource/edit
+  # def edit
 
-    super
-  end
-
-  PUT /resource
-  def update
+  #   super
+  # end
+  #
+  # PUT /resource
+  # def update
     # super
-  end
+  # end
 
   # DELETE /resource
   # def destroy

@@ -10,5 +10,5 @@ class User < ActiveRecord::Base
   #NOT AVALIBLE IN RAILS 4
 
   validates_presence_of :username
-
+  has_many :photos
 end
