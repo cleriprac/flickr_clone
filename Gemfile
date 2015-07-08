@@ -10,6 +10,9 @@ gem 'turbolinks'
 gem 'pry'
 gem 'bootstrap-sass'
 gem 'bcrypt', require: "bcrypt"
+gem 'devise'
+gem "paperclip", "~> 4.3"
+
 
 group :development do
   gem 'byebug'
@@ -17,8 +20,6 @@ group :development do
   gem 'spring'
   gem 'quiet_assets'
   gem 'letter_opener'
-  gem 'devise'
-  gem "paperclip", "~> 4.3"
 end
 
 group :test, :development do
