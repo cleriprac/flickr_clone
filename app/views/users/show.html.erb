@@ -1,0 +1,5 @@
+<% current_user.photos.each do |photo| %>
+  <b><p><%= photo.title%></p></b>
+  <%= link_to 'View Photo', user_photo_path(current_user, photo) %>
+  <p><%= photo.description %></p>
+<% end %>
