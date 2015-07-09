@@ -6,3 +6,7 @@
 <%= @photo.description %>
 <br>
 <%= image_tag @photo.image.url(:medium) %>
+
+<%= link_to 'Delete Photo', user_photo_path(@user, @photo),
+                            :data => {:confirm => "Are you sure?",
+                            :method => "delete"}%>
