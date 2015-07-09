@@ -1,7 +1,7 @@
 <% current_user.photos.each do |photo| %>
   <b><p><%= photo.title%></p></b>
   <%=  %>
-  <%=link_to( image_tag(photo.image.url(:thumb)), user_photo_path(current_user, photo), :id=>"photo" ) %>
+  <%=link_to( image_tag(photo.image.url(:thumb)), user_photo_path(current_user, photo), :id=>"photo_test" ) %>
 
 <a href="www.google.com" class="pink"></a>
 

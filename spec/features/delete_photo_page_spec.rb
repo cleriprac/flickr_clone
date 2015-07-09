@@ -8,7 +8,7 @@ describe "the delete photo process" do
     login_as(user, :scope => :user)
     visit user_path(user)
     # save_and_open_page #using launchy
-    find('#photo').click
+    find('#photo_test').click
     expect(page).to have_content "View Photo"
   end
 end

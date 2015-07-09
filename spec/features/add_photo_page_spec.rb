@@ -3,6 +3,7 @@ require 'rails_helper'
 describe "the add photo process" do
   it "creates a new photo" do
     user = FactoryGirl.create(:user)
+    photo = FactoryGirl.create(:photo, user: user)
     visit '/users/login'
     login_as(user, :scope => :user)
     visit '/'
