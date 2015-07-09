@@ -1,9 +1,11 @@
 <%= form_for [current_user, @photo] do |f| %>
+  <%= f.file_field :image %>
+
+
   <%= f.label :title %>
   <%= f.text_field :title %>
   <%= f.label :description %>
   <%= f.text_field :description %>
-  <%= f.file_field :avatar %>
 
   <%= f.submit %>
 <% end %>

@@ -1,4 +1,8 @@
 <h1>Flickr</h1>
 
+<% if current_user %>
 <%= link_to 'Add Photo', new_user_photo_path(current_user)   %>
 <%= link_to 'Your Photos', user_path(current_user)   %>
+<% end %>
+
+<%= image_tag @photo.image.url(:medium) %>

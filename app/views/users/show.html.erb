@@ -1,5 +1,9 @@
 <% current_user.photos.each do |photo| %>
   <b><p><%= photo.title%></p></b>
-  <%= link_to 'View Photo', user_photo_path(current_user, photo) %>
+  <%=  %>
+  <%=link_to( image_tag(photo.image.url(:thumb)), user_photo_path(current_user, photo), :id=>"photo" ) %>
+
+<a href="www.google.com" class="pink"></a>
+
   <p><%= photo.description %></p>
 <% end %>
